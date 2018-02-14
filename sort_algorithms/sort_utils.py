@@ -4,3 +4,10 @@ def is_sorted(a):
         if a[i] < a[i - 1]:
             return False
     return True
+
+
+def exchange(a, i, j):
+        """  exchange a[i] and a[j]"""
+        tmp = a[i]
+        a[i] = a[j]
+        a[j] = tmp

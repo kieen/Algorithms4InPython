@@ -1,5 +1,7 @@
 import unittest
+
 from QuickFindUF import QuickFindUF
+
 class QuickFindUFTest(unittest.TestCase):
     def test(self):
         uf= QuickFindUF(9)

@@ -1,3 +1,6 @@
+import sort_utils
+
+
 class SelectionSort(object):
     """ implementation of selection sort"""
 
@@ -11,14 +14,7 @@ class SelectionSort(object):
                 if a[min_index] > a[j]:
                     min_index = j
             if a[i] > a[min_index]:
-                SelectionSort._exchange(a, i, min_index)
-
-    @staticmethod
-    def _exchange(a, i, j):
-        """  exchange a[i] and a[j]"""
-        tmp = a[i]
-        a[i] = a[j]
-        a[j] = tmp
+                sort_utils.exchange(a, i, min_index)
 
 
 if __name__ == '__main__':
