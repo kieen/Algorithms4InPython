@@ -7,7 +7,11 @@ def is_sorted(a):
 
 
 def exchange(a, i, j):
-        """  exchange a[i] and a[j]"""
+        """  exchange/swap a[i] and a[j] written in the pythonic way.
+        Alternatively, you can use a temporary variable as usual:
         tmp = a[i]
         a[i] = a[j]
         a[j] = tmp
+        """
+        a[i], a[j] = a[j], a[i]
+        
