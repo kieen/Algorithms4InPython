@@ -12,15 +12,16 @@ class InsertionSort(object):
             while (j > 0) and (a[j] < a[j - 1]):
                 sort_utils.exchange(a, j, j - 1)
                 j -= 1
-            """ Note that if one "literally translate" the Java code in the slide/book, it won't work. 
-            The resulting translation will be as follows:
+            """ Note that if one use the for loop in python to "literally translate" the Java code in the slide/book, 
+            it won't work. The resulting translation will be as follows:
             #===================================================================
-            # for j in range(i, 1, -1):
+            # for j in range(i, 2, -1):
             #     if a[j] < a[j - 1]:
             #         sort_utils.exchange(a, j, j - 1)
             #     else: 
             #         break
             #         
             #===================================================================
-            In the case where i=1, rang(1,1-1) return empty list, which could result in the wrong position of a[1]
+            range(i,2,-1) is used to get [i,i-1,....1].
+            But for i=1 or 2, range(1,2,-1) and range(2,2,-1) return empty list
             """

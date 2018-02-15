@@ -1,3 +1,8 @@
+""" 
+This file contain some special cases, in which people might misunderstand python
+"""
+
+
 def special_case_of_rangefunction():
     """ range(1,1,-1) return empty list"""
     r1 = list(range(1, 1, -1))
