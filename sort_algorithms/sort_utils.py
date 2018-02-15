@@ -1,7 +1,19 @@
+"""this module has some utilities for sort algorithm"""
+
 def is_sorted(a):
+    ''' check if a is sorted'''
     n = len(a)
     for i in range(1, n):
         if a[i] < a[i - 1]:
+            return False
+    return True
+
+
+def is_h_sorted(a, h):
+    ''' check if a is h-sorted'''
+    n = len(a)
+    for i in range(h, n):
+        if a[i] < a[i - h]:
             return False
     return True
 

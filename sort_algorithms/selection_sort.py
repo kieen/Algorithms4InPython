@@ -19,5 +19,5 @@ class SelectionSort(object):
 
 if __name__ == '__main__':
     a = [4, 1, 2, 3]
-    SelectionSort().sort(a)
+    SelectionSort.sort(a)
     print(a)
