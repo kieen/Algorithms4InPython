@@ -1,8 +1,9 @@
-import sort_utils
+# import sort_algorithms.sort_utils
+from sort_algorithms import sort_utils
 
 
 class InsertionSort(object):
-    """ implementation of insertion sort"""
+    """ implementation of insertion merge_sort"""
     
     @staticmethod
     def sort(a):
@@ -25,3 +26,9 @@ class InsertionSort(object):
             range(i,2,-1) is used to get [i,i-1,....1].
             But for i=1 or 2, range(1,2,-1) and range(2,2,-1) return empty list
             """
+
+
+if __name__ == '__main__':
+    a = [9, 8, 5, 6, 7, 4, 3, 2, 1]
+    InsertionSort.sort(a)
+    print(a)

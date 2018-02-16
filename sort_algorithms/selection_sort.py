@@ -1,12 +1,13 @@
-import sort_utils
+from sort_algorithms import sort_utils
+
 
 
 class SelectionSort(object):
-    """ implementation of selection sort"""
+    """ implementation of selection merge_sort"""
 
     @staticmethod
     def sort(a):
-        """ sort a """
+        """ merge_sort a """
         n = len(a)
         for i in range(n - 1):
             min_index = i

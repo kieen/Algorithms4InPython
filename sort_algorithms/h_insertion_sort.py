@@ -1,8 +1,8 @@
-import sort_utils
+from sort_algorithms import sort_utils
 
 
 class HInsertionSort(object):
-    """ implementation of insertion sort for h-sort"""
+    """ implementation of insertion merge_sort for h-merge_sort"""
     
     @staticmethod
     def sort(a, h):
@@ -15,6 +15,6 @@ class HInsertionSort(object):
 
             
 if __name__ == '__main__':
-    a = [4, 1, 2, 3]
-    HInsertionSort.sort(a, 2)
+    a = [9, 8, 5, 6, 7, 4, 3, 2, 1]
+    HInsertionSort.sort(a, 3)
     print(a)
