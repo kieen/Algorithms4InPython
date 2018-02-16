@@ -1,11 +1,11 @@
-import unittest
-from selection_sort import SelectionSort
-import sort_utils
-from insertion_sort import InsertionSort
 import random
-from shell_sort import ShellSort
-from h_insertion_sort import HInsertionSort
+import unittest
 
+from sort_algorithms.selection_sort import SelectionSort
+from sort_algorithms import sort_utils
+from sort_algorithms.insertion_sort import InsertionSort
+from sort_algorithms.h_insertion_sort import HInsertionSort
+from sort_algorithms.shell_sort import ShellSort
 
 class SortTest(unittest.TestCase):
     """ test sort algorithms"""
